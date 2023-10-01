@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy-Bold", sans-serif;
+}
+
+.section-one {
+  background: linear-gradient(90deg, #004a97 24.27%, #1aa4de 63.94%);
+}
+
+@media (max-width: 640px) {
+  .line {
+    position: relative;
+    top: 185px;
+  }
+}
