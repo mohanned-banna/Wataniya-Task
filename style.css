@@ -13,9 +13,3 @@
   background: linear-gradient(90deg, #004a97 24.27%, #1aa4de 63.94%);
 }
 
-@media (max-width: 640px) {
-  .line {
-    position: relative;
-    top: 185px;
-  }
-}
