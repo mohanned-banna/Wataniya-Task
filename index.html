@@ -20,55 +20,64 @@
   <body>
     <div class="flex flex-col">
       <section
-        class="h-[450px] flex-col sm:flex-row section-one flex justify-between"
+        dir="ltr"
+        dir="ltr"
+        class="h-[400px] flex-col sm:flex-row section-one flex justify-between"
       >
         <div
-          class="flex flex-col pl-7 sm:pl-8 md:pl-14 2xl:px-[84px] pt-[90px] gap-6"
+          class="flex flex-col pl-7 sm:pl-8 md:pl-14 rtl:pr-7 rtl:sm:pr-8 rtl:md:pr-14 2xl:px-[84px] pt-[90px] gap-6"
         >
           <div class="flex flex-col">
-            <h2
-              class="text-[#DA552E] text-[25px] sm:text-[33px] lg:text-[35px] xl:text-[40px] 2xl:text-[50px] w-full"
-            >
-              Report Amanah
+            <h2 class="text-[#DA552E] xl-size md:xl5-size w-full">
+              <span class="ltr:block rtl:hidden">Report Amanah</span>
+              <span class="rtl:block ltr:hidden">لوريم إيبسوم</span>
             </h2>
             <h3
-              class="text-white md:-mt-2 text-[15px] sm:text-[18px] lg:text-[23px] xl:text-[27px] 2xl:text-[34px] w-full"
+              class="text-white md:-mt-2 xs-size md:lg-size lg:xl2-size xl:text-[27px] 2xl:xl3-size w-full"
             >
-              Report an improper conduct “Amanah”
+              <span class="ltr:block rtl:hidden"
+                >Report an improper conduct “Amanah”</span
+              >
+              <span class="rtl:block ltr:hidden"
+                >لوريم إيبسوم هو ببساطة نص شكلي</span
+              >
             </h3>
           </div>
           <button
-            class="bg-white rounded-2xl w-28 sm:w-32 lg:w-[177px] text-xs sm:text-sm lg:text-[16px] h-[34px] text-[#004A97] cursor-pointer"
+            class="bg-white rounded-2xl w-28 sm:w-32 lg:w-[177px] xs-size sm:sm-size lg:base-size h-[27px] text-[#004A97] cursor-pointer"
           >
-            Report Amanah
+            <span class="ltr:block rtl:hidden">Report Amanah</span>
+            <span class="rtl:block ltr:hidden">اضغط هنا</span>
           </button>
         </div>
-        <div class="lg:mt-10 flex pl-5 sm:pl-0 justify-end items-end relative">
+        <div
+          class="lg:mt-10 flex pl-5 rtl:pl-0 sm:pl-0 justify-end items-end relative"
+        >
           <div
             class="flex items-end mb-[32.5px] md:mb-[51.7px] lg:mb-[52.5px] xl:mb-[61px]"
           >
             <div
-              class="bg-white absolute left-[12vw] sm:-left-[35vw] md:-left-[33vw] w-[35vw] sm:w-[55vw] md:w-[50vw] h-[1px] md:h-[1.3px]"
+              class="bg-white absolute left-[12vw] rtl:right-[12vw] sm:-left-[35vw] rtl:sm:-right-[35vw] md:-left-[33vw] rtl:md:-right-[33vw] w-[39vw] sm:w-[55vw] md:w-[50vw] h-[1px] md:h-[1.3px]"
             ></div>
             <div
-              class="flex flex-col absolute -mt-[2px] left-8 sm:-left-[41vw] md:-left-[33vw]"
+              class="flex flex-col absolute -mt-[2px] left-8 rtl:right-8 sm:-left-[41vw] rtl:sm:-right-[41vw] md:-left-[33vw] rtl:md:-right-[33vw]"
             >
               <div
-                class="absolute border-l-2 h-[60px] border-white md:w-[70px] w-[7vw] border-t-2 md:border-t-0 -mt-[1px] sm:boder-t-0"
+                class="absolute ltr:border-l-2 rtl:border-r-2 h-[60px] border-white md:w-[70px] w-[7vw] border-t-2 md:border-t-0 -mt-[1px] sm:boder-t-0"
               >
                 <span class="opacity-0">t</span>
               </div>
               <div
-                class="absolute border-[#004A97] top-[32px] sm-top-[55px] md:top-[55px] 2xl:top-[60px] !border-l-2 w-[7vw] md:w-[70px] border-b-2 md:pb-5"
+                class="absolute border-[#004A97] top-[32px] rtl:border-r-2 md:top-[6vh] lg: 2xl:top-[60px] ltr:!border-l-2 w-[7vw] border-b-2 md:pb-5"
               >
                 <span class="opacity-0">t</span>
               </div>
             </div>
           </div>
-          <div class="">
+          <div class="absolute sm:static">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="w-[355px] h-[170px] pb-2 sm:w-[360px] sm:h-[170px] md:w-[480px] md:h-[250px] lg:w-[630px] lg:h-[300px] xl:w-[750px] xl:h-[355px]"
+              class="rtl:transform rtl:-scale-x-100 img-section-one w-[15rem] h-[9rem] sm:pb-2 sm:w-[360px] sm:h-[170px] md:w-[480px] md:h-[250px] lg:w-[630px] lg:h-[300px] xl:w-[750px] xl:h-[355px]"
               viewBox="0 0 766 355"
               fill="none"
             >
@@ -80,16 +89,23 @@
           </div>
         </div>
       </section>
-      <section class="px-10 lg:px-16 mb-20 2xl:px-24">
+      <section dir="ltr" class="px-5 sm:px-8 lg:px-16 mb-20 2xl:px-24">
         <div class="flex justify-end items-end">
           <div
-            class="flex items-center md:gap-14 h-[5vh] w-[95vw] md:h-[9vh] justify-end md:w-[97vw] 2xl:w-[77vw]"
+            class="flex items-center md:gap-14 h-[5vh] py-[30px] w-[95vw] md:h-[9vh] justify-end md:w-[97vw] 2xl:w-[77vw]"
           >
             <span
-              class="text-[#004A97] text-[14px] sm:text-[15px] md:text-[16px] ml-[25px] sm:m-0 2xl:ml-60"
-              >The types of improper conduct include, but not limited to the
-              following:</span
+              class="title-section-two text-[#004A97] xs-size sm:sm-size md:base-size mt-7 sm:mt-0 ml-10 rtl:mr-10 sm:m-0 ltr:2xl:ml-60 rtl:2xl:mr-60"
             >
+              <span class="ltr:block rtl:hidden"
+                >The types of improper conduct include, but not limited to the
+                following:</span
+              >
+              <span class="rtl:block ltr:hidden"
+                >تشمل أنواع السلوك غير اللائق، على سبيل المثال لا الحصر، ما
+                يلي:</span
+              >
+            </span>
             <div
               class="border-t-2 border-[#004A97] w-[10vw] lg:w-[27vw] xl:w-[33vw] 2xl:w-[30vw]"
             ></div>
@@ -97,7 +113,7 @@
         </div>
         <div class="flex flex-col gap-5">
           <div
-            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-x-7 gap-y-20 -my-6 md:-my-10 px-12 pl-0 py-20 border-r-2 border-[#004A97]"
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-x-7 gap-y-16 -my-[30px] md:-my-[4.6vh] px-12 ltr:pl-0 rtl:pr-0 py-[10vh] sm:py-[20vh] border-r-2 rtl:border-l-2 rtl:border-r-0 border-[#004A97]"
           >
             <div class="flex gap-5">
               <svg
@@ -106,7 +122,7 @@
                 height="60"
                 viewBox="0 0 60 60"
                 fill="none"
-                class="min-w-max"
+                class="icon-section-two w-[40px] min-w-[40px] sm:min-w-max"
               >
                 <path
                   d="M21.5625 36.5625V26.25C21.5625 26.0014 21.4637 25.7629 21.2879 25.5871C21.1121 25.4113 20.8736 25.3125 20.625 25.3125H16.875C16.6264 25.3125 16.3879 25.4113 16.2121 25.5871C16.0363 25.7629 15.9375 26.0014 15.9375 26.25V36.5625H17.8125V27.1875H19.6875V36.5625H21.5625Z"
@@ -138,9 +154,18 @@
                 />
               </svg>
               <div>
-                <p>
-                  Financial and administrative corruption, i.e. any illegal
-                  exploitation of financial resources or administrative ..
+                <p
+                  class="description-card w-[170px] sm:w-full xs-size sm:base-size leading-[1.6rem]"
+                >
+                  <span class="ltr:block rtl:hidden"
+                    >Financial and administrative corruption, i.e. any illegal
+                    exploitation of financial resources or administrative
+                    ..</span
+                  >
+                  <span class="rtl:block ltr:hidden"
+                    >الفساد المالي والإداري، أي غير قانوني استغلال الموارد
+                    المالية أو الإدارية..</span
+                  >
                 </p>
               </div>
             </div>
@@ -151,6 +176,7 @@
                 height="60"
                 viewBox="0 0 60 60"
                 fill="none"
+                class="icon-section-two min-w-[40px] sm:min-w-max"
                 class="min-w-max"
               >
                 <path
@@ -191,9 +217,17 @@
                 />
               </svg>
               <div>
-                <p>
-                  Violation of the rules, regulations, instructions and policies
-                  that must be followed in accordance with ..
+                <p
+                  class="description-card xs-size leading-[1.6rem]"
+                >
+                  <span class="ltr:block rtl:hidden"
+                    >Violation of the rules, regulations, instructions and
+                    policies that must be followed in accordance with ..</span
+                  >
+                  <span class="rtl:block ltr:hidden"
+                    >مخالفة القواعد والأنظمة والتعليمات والسياسات والتي يجب
+                    اتباعها وفق ..</span
+                  >
                 </p>
               </div>
             </div>
@@ -204,6 +238,7 @@
                 height="60"
                 viewBox="0 0 60 60"
                 fill="none"
+                class="icon-section-two min-w-[40px] sm:min-w-max"
                 class="min-w-max"
               >
                 <g clip-path="url(#clip0_503_25350)">
@@ -231,9 +266,17 @@
                 </defs>
               </svg>
               <div>
-                <p>
-                  Inappropriate behavior contrary to public order, Islamic
-                  manners, customs and traditions.
+                <p
+                  class="description-card xs-size leading-[1.6rem]"
+                >
+                  <span class="ltr:block rtl:hidden"
+                    >Inappropriate behavior contrary to public order, Islamic
+                    manners, customs and traditions.</span
+                  >
+                  <span class="rtl:block ltr:hidden"
+                    >السلوك غير اللائق المخالف للنظام العام الإسلامي الأخلاق
+                    والعادات والتقاليد.</span
+                  >
                 </p>
               </div>
             </div>
@@ -244,6 +287,7 @@
                 height="60"
                 viewBox="0 0 60 60"
                 fill="none"
+                class="icon-section-two min-w-[40px] sm:min-w-max"
                 class="min-w-max"
               >
                 <path
@@ -264,9 +308,17 @@
                 />
               </svg>
               <div>
-                <p>
-                  Violations related to the environment, health & safety in the
-                  area of work, which include any negative..
+                <p
+                  class="description-card xs-size leading-[1.6rem]"
+                >
+                  <span class="ltr:block rtl:hidden"
+                    >Violations related to the environment, health & safety in
+                    the area of work, which include any negative..</span
+                  >
+                  <span class="rtl:block ltr:hidden"
+                    >المخالفات المتعلقة بالبيئة والصحة والسلامة في مجال العمل
+                    والذي يتضمن أي سلبيات..</span
+                  >
                 </p>
               </div>
             </div>
@@ -277,6 +329,7 @@
                 height="60"
                 viewBox="0 0 60 60"
                 fill="none"
+                class="icon-section-two min-w-[40px] sm:min-w-max"
                 class="min-w-max"
               >
                 <g clip-path="url(#clip0_503_25277)">
@@ -340,7 +393,16 @@
                 </defs>
               </svg>
               <div>
-                <p>Misuse of the Company’s property or assets.</p>
+                <p
+                  class="description-card xs-size leading-[1.6rem]"
+                >
+                  <span class="ltr:block rtl:hidden"
+                    >Misuse of the Company’s property or assets.</span
+                  >
+                  <span class="rtl:block ltr:hidden"
+                    >إساءة استخدام ممتلكات الشركة أو أصولها.</span
+                  >
+                </p>
               </div>
             </div>
             <div class="flex gap-5">
@@ -350,6 +412,7 @@
                 height="60"
                 viewBox="0 0 60 60"
                 fill="none"
+                class="icon-section-two min-w-[40px] sm:min-w-max"
                 class="min-w-max"
               >
                 <g clip-path="url(#clip0_503_25356)">
@@ -389,9 +452,16 @@
                 </defs>
               </svg>
               <div>
-                <p>
-                  Abuse of power or decision may be against the interest of the
-                  Company.
+                <p
+                  class="description-card xs-size leading-[1.6rem]"
+                >
+                  <span class="ltr:block rtl:hidden">
+                    Abuse of power or decision may be against the interest of
+                    the Company.</span
+                  >
+                  <span class="rtl:block ltr:hidden"
+                    >إساءة استخدام السلطة أو القرار قد يكون ضد مصلحة شركة.</span
+                  >
                 </p>
               </div>
             </div>
@@ -402,6 +472,7 @@
                 height="60"
                 viewBox="0 0 60 60"
                 fill="none"
+                class="icon-section-two min-w-[40px] sm:min-w-max"
                 class="min-w-max"
               >
                 <path
@@ -482,9 +553,17 @@
                 />
               </svg>
               <div>
-                <p>
-                  Process of irregular operations circumventing regulations or
-                  covering-up systemic errors.
+                <p
+                  class="description-card xs-size leading-[1.6rem]"
+                >
+                  <span class="ltr:block rtl:hidden"
+                    >Process of irregular operations circumventing regulations
+                    or covering-up systemic errors.</span
+                  >
+                  <span class="rtl:block ltr:hidden"
+                    >عملية عمليات غير نظامية التحايل على الأنظمة أو التستر على
+                    الأخطاء النظامية.</span
+                  >
                 </p>
               </div>
             </div>
@@ -495,6 +574,7 @@
                 height="60"
                 viewBox="0 0 60 60"
                 fill="none"
+                class="icon-section-two min-w-[40px] sm:min-w-max"
                 class="min-w-max"
               >
                 <g clip-path="url(#clip0_503_25297)">
@@ -550,9 +630,17 @@
                 </defs>
               </svg>
               <div>
-                <p>
-                  Where there is a conflict of interest with any business or
-                  contract.
+                <p
+                  class="description-card xs-size leading-[1.6rem]"
+                >
+                  <span class="ltr:block rtl:hidden"
+                    >Process of irregular operations circumventing regulations
+                    or covering-up systemic errors.</span
+                  >
+                  <span class="rtl:block ltr:hidden"
+                    >عملية عمليات غير نظامية التحايل على الأنظمة أو التستر على
+                    الأخطاء النظامية.</span
+                  >
                 </p>
               </div>
             </div>
@@ -563,6 +651,7 @@
                 height="60"
                 viewBox="0 0 60 60"
                 fill="none"
+                class="icon-section-two min-w-[40px] sm:min-w-max"
                 class="min-w-max"
               >
                 <path
@@ -643,7 +732,18 @@
                 />
               </svg>
               <div>
-                <p>Misuse of powers granted by the Company to its employees.</p>
+                <p
+                  class="description-card xs-size leading-[1.6rem]"
+                >
+                  <span class="ltr:block rtl:hidden"
+                    >Process of irregular operations circumventing regulations
+                    or covering-up systemic errors.</span
+                  >
+                  <span class="rtl:block ltr:hidden"
+                    >عملية عمليات غير نظامية التحايل على الأنظمة أو التستر على
+                    الأخطاء النظامية.</span
+                  >
+                </p>
               </div>
             </div>
             <div class="flex gap-5">
@@ -653,6 +753,7 @@
                 height="60"
                 viewBox="0 0 60 60"
                 fill="none"
+                class="icon-section-two min-w-[40px] sm:min-w-max"
                 class="min-w-max"
               >
                 <g clip-path="url(#clip0_503_25434)">
@@ -680,7 +781,18 @@
                 </defs>
               </svg>
               <div>
-                <p>Obtain undeserved paid benefits or rewards.</p>
+                <p
+                  class="description-card xs-size leading-[1.6rem]"
+                >
+                  <span class="ltr:block rtl:hidden"
+                    >Process of irregular operations circumventing regulations
+                    or covering-up systemic errors.</span
+                  >
+                  <span class="rtl:block ltr:hidden"
+                    >عملية عمليات غير نظامية التحايل على الأنظمة أو التستر على
+                    الأخطاء النظامية.</span
+                  >
+                </p>
               </div>
             </div>
             <div class="flex gap-5">
@@ -690,6 +802,7 @@
                 height="60"
                 viewBox="0 0 60 60"
                 fill="none"
+                class="icon-section-two min-w-[40px] sm:min-w-max"
                 class="min-w-max"
               >
                 <g clip-path="url(#clip0_503_25311)">
@@ -717,8 +830,17 @@
                 </defs>
               </svg>
               <div>
-                <p>
-                  Disclosure of confidential information in an irregular manner.
+                <p
+                  class="description-card xs-size leading-[1.6rem]"
+                >
+                  <span class="ltr:block rtl:hidden"
+                    >Process of irregular operations circumventing regulations
+                    or covering-up systemic errors.</span
+                  >
+                  <span class="rtl:block ltr:hidden"
+                    >عملية عمليات غير نظامية التحايل على الأنظمة أو التستر على
+                    الأخطاء النظامية.</span
+                  >
                 </p>
               </div>
             </div>
@@ -729,7 +851,7 @@
                 height="60"
                 viewBox="0 0 60 60"
                 fill="none"
-                class="min-w-max"
+                class="icon-section-two !w-[40px] min-w-[40px] sm:min-w-max"
               >
                 <path
                   d="M60 36.0621C60 33.0611 57.9861 30.3861 55.1032 29.553L47.4194 27.3368V25.3886C48.4424 24.5673 49.2514 23.4918 49.7527 22.2581H50.3226C52.4575 22.2581 54.1936 20.522 54.1936 18.3871V11.6129C54.1936 5.20917 48.9844 0 42.5807 0C38.2934 0 34.5505 2.34091 32.5394 5.80645H0V60H46.4516V40.6452H60V36.0621ZM48.9447 29.7911L47.0305 34.257L44.0285 31.8561L46.7314 29.1532L48.9447 29.7911ZM45.4839 27.6638L42.5807 30.567L39.6774 27.6638V26.5269C40.5743 26.8917 41.5538 27.0968 42.5807 27.0968C43.6075 27.0968 44.587 26.8917 45.4839 26.5269V27.6638ZM38.429 29.1523L41.1319 31.8552L38.1299 34.2561L36.2157 29.7902L38.429 29.1523ZM48.3871 19.3548C48.3871 22.5572 45.783 25.1613 42.5807 25.1613C39.3783 25.1613 36.7742 22.5572 36.7742 19.3548V15.9106C36.7742 14.6083 37.8341 13.5484 39.1364 13.5484C39.3911 13.5484 39.6415 13.589 39.8834 13.6694L42.5807 14.5686L45.2779 13.6694C45.5188 13.589 45.7693 13.5484 46.0249 13.5484C47.3272 13.5484 48.3871 14.6083 48.3871 15.9106V19.3548ZM50.3226 20.3226H50.256C50.2957 20.005 50.3226 19.6828 50.3226 19.3548V16.4516C51.39 16.4516 52.2581 17.3197 52.2581 18.3871C52.2581 19.4545 51.39 20.3226 50.3226 20.3226ZM42.5807 1.93548C47.9169 1.93548 52.2581 6.27662 52.2581 11.6129V15.0543C51.6863 14.7212 51.0309 14.5161 50.3226 14.5161H50.0698C49.4876 12.832 47.9032 11.6129 46.024 11.6129C45.5604 11.6129 45.1035 11.6876 44.664 11.8345L42.5807 12.5282L40.4963 11.8336C40.0578 11.6876 39.5999 11.6129 39.1364 11.6129C37.2571 11.6129 35.6727 12.832 35.0901 14.5161H34.8387C34.1304 14.5161 33.475 14.7212 32.9032 15.0543V11.6129C32.9032 6.27662 37.2444 1.93548 42.5807 1.93548ZM34.9053 20.3226H34.8387C33.7713 20.3226 32.9032 19.4545 32.9032 18.3871C32.9032 17.3197 33.7713 16.4516 34.8387 16.4516V19.3548C34.8387 19.6828 34.8656 20.005 34.9053 20.3226ZM44.5161 58.0645H1.93548V7.74194H31.6454C31.2144 8.95445 30.9677 10.2544 30.9677 11.6129V18.3871C30.9677 20.522 32.7038 22.2581 34.8387 22.2581H35.4086C35.9099 23.4918 36.7189 24.5673 37.7419 25.3886V27.3368L30.0581 29.553C27.1752 30.3851 25.1613 33.0611 25.1613 36.0621V40.6452H44.5161V58.0645ZM58.0645 38.7097H54.1936V33.871H52.2581V38.7097H32.9032V33.871H30.9677V38.7097H27.0968V36.0621C27.0968 33.9192 28.5347 32.0083 30.594 31.4129L34.3421 30.3308L37.353 37.3559L42.5807 33.1749L47.8073 37.3568L50.8183 30.3317L54.5659 31.4138C56.6266 32.0073 58.0645 33.9192 58.0645 36.0621V38.7097Z"
@@ -777,9 +899,17 @@
                 />
               </svg>
               <div>
-                <p>
-                  Concealment in bad faith or intentional negligence,
-                  destruction of official documents or cover-up of fraudulent..
+                <p
+                  class="description-card w-[150px] xs-size leading-[1.6rem]"
+                >
+                  C<span class="ltr:block rtl:hidden"
+                    >Process of irregular operations circumventing regulations
+                    or covering-up systemic errors.</span
+                  >
+                  <span class="rtl:block ltr:hidden"
+                    >عملية عمليات غير نظامية التحايل على الأنظمة أو التستر على
+                    الأخطاء النظامية.</span
+                  >
                 </p>
               </div>
             </div>
@@ -790,6 +920,7 @@
                 height="60"
                 viewBox="0 0 60 60"
                 fill="none"
+                class="icon-section-two min-w-[40px] sm:min-w-max"
                 class="min-w-max"
               >
                 <g clip-path="url(#clip0_503_25417)">
@@ -837,8 +968,17 @@
                 </defs>
               </svg>
               <div>
-                <p>
-                  Serious negligence that may result in damage to the Company.
+                <p
+                  class="description-card xs-size leading-[1.6rem]"
+                >
+                  <span class="ltr:block rtl:hidden"
+                    >Process of irregular operations circumventing regulations
+                    or covering-up systemic errors.</span
+                  >
+                  <span class="rtl:block ltr:hidden"
+                    >عملية عمليات غير نظامية التحايل على الأنظمة أو التستر على
+                    الأخطاء النظامية.</span
+                  >
                 </p>
               </div>
             </div>
@@ -849,6 +989,7 @@
                 height="60"
                 viewBox="0 0 60 60"
                 fill="none"
+                class="icon-section-two min-w-[40px] sm:min-w-max"
                 class="min-w-max"
               >
                 <g clip-path="url(#clip0_503_25428)">
@@ -880,31 +1021,56 @@
                 </defs>
               </svg>
               <div>
-                <p>Cover-up any of the above violations.</p>
+                <p
+                  class="description-card xs-size leading-[1.6rem]"
+                >
+                  <span class="ltr:block rtl:hidden"
+                    >Process of irregular operations circumventing regulations
+                    or covering-up systemic errors.</span
+                  >
+                  <span class="rtl:block ltr:hidden"
+                    >عملية عمليات غير نظامية التحايل على الأنظمة أو التستر على
+                    الأخطاء النظامية.</span
+                  >
+                </p>
               </div>
             </div>
           </div>
           <div class="flex gap-4">
             <div
-              class="flex flex-col gap-3 justify-center -mt-2 md:mt-1 text-sm w-[55vw] md:text-[16px]"
+              class="description-card flex flex-col gap-3 justify-center -mt-2 md:mt-1 w-[55vw] md:base-size xs-size leading-[1.6rem]"
             >
-              <span class="text-[#404040]"
-                >To Report Illegal Or Unethical Behavior, Please Contact The
-                Following:
+              <span class="text-[#404040]">
+                <span class="ltr:block rtl:hidden"
+                  >Process of irregular operations circumventing regulations or
+                  covering-up systemic errors.</span
+                >
+                <span class="rtl:block ltr:hidden"
+                  >عملية عمليات غير نظامية التحايل على الأنظمة أو التستر على
+                  الأخطاء النظامية.</span
+                >
               </span>
-              <span class="text-[#DA552E]">Amanah@Wataniya.Com.Sa</span>
+              <span class="text-[#DA552E]">
+                <span class="ltr:block rtl:hidden"
+                  >Process of irregular operations circumventing
+                </span>
+                <span class="rtl:block ltr:hidden"
+                  >عملية عمليات غير نظامية
+                </span>
+              </span>
             </div>
             <div
-              class="border-t-2 border-[#004A97] mt-1 md:mt-5 w-[38vw] md:w-[48vw] lg:w-[54vw] xl:w-[75vw] 2xl:w-[95vw]"
+              class="border-t-2 border-[#004A97] mt-[2vh] md:mt-[2vh] w-[38vw] md:w-[48vw] lg:w-[54vw] xl:w-[75vw] 2xl:w-[95vw]"
             ></div>
           </div>
         </div>
       </section>
-      <div class="flex justify-center">
+      <div dir="ltr" dir="ltr" class="flex justify-center">
         <button
-          class="my-10 bg-[#DA552E] w-[180px] h-[50px] text-white rounded-full"
+          class="mb-5 -mt-5 bg-[#DA552E] w-32 h-7 text-sm sm:w-[180px] sm:h-[50px] text-white rounded-full"
         >
-          Report Amanah
+          <span class="ltr:block rtl:hidden">click me</span>
+          <span class="rtl:block ltr:hidden">اضغط هنا</span>
         </button>
       </div>
     </div>

@@ -10,6 +10,55 @@
 }
 
 .section-one {
-  background: linear-gradient(90deg, #004a97 24.27%, #1aa4de 63.94%);
+  /* background: linear-gradient(90deg, #004a97 24.27%, #1aa4de 63.94%); */
+  background: linear-gradient(270deg, #004a97 24.27%, #1aa4de 63.94%);
 }
 
+@media screen and (min-width: 365px) and (max-width: 639px) {
+  .img-section-one {
+    width: 20rem !important;
+    height: 10.5rem !important;
+  }
+  .title-section-two {
+    margin-top: 10px !important;
+    padding: 0px;
+  }
+  .icon-section-two {
+    min-width: 50px;
+  }
+  .description-card {
+    font-size: 0.9rem;
+    width: 100% !important;
+  }
+}
+:root {
+  --font-size: 16px;
+}
+
+.base-size {
+  font-size: var(--font-size) !important;
+}
+.xs-size {
+  font-size: calc(var(--font-size) - 4px) !important;
+}
+.sm-size {
+  font-size: calc(var(--font-size) - 2px) !important;
+}
+.lg-size {
+  font-size: calc(var(--font-size) + 2px) !important;
+}
+.xl-size{
+  font-size: calc(var(--font-size) + 4px) !important;
+}
+.xl2-size{
+  font-size: calc(var(--font-size) + 8px) !important;
+}
+.xl3-size{
+  font-size: calc(var(--font-size) + 16px) !important;
+}
+.xl4-size{
+  font-size: calc(var(--font-size) + 26px) !important;
+}
+.xl5-size{
+  font-size: calc(var(--font-size) + 34px) !important;
+}
