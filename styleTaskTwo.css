@@ -15,16 +15,28 @@
     rgba(255, 255, 255, 0) 88.43%
   ) !important;
 }
-.custom-gradient-blue {
-  background: linear-gradient(
-    0deg,
-    #004a97 24.54%,
-    rgba(26, 164, 222, 0.68) 96.17%
-  ) !important;
+
+.gradient-additionalCost-section {
+  background: linear-gradient(180deg, #00a7e1 25%, #2e4990 100%) !important;
 }
 @media screen and (min-width: 400px) and (max-width: 639px) {
   .custom-gradient-white,
   .custom-gradient-blue {
     min-width: 55vw !important;
+    height: 25vh !important;
   }
+}
+.hover-custom-gradient-blue:hover  {
+  transition: all 0.5s ease;
+  background: linear-gradient(    0deg,    #004a97 24.54%,    rgba(26, 164, 222, 0.68) 96.17%  ) !important;
+  color: white !important;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  /*transition-timing-function: linear 1s;
+  */transition: background 0.5s ease;
+}
+.hover-custom-gradient-blue:hover button span{
+  color: white;
 }
